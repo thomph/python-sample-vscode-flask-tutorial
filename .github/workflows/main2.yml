@@ -28,6 +28,5 @@ jobs:
     - name: Run sonarqube
       run: sonar-scanner
            -Dsonar.login=${{ secrets.SONARQUBE_TOKEN }}
-           -Dsonar.organization=vinai
            -Dsonar.host.url=${{ secrets.SONARQUBE_HOST }}
            -Dsonar.projectKey=python-sample-vscode-flask-tutorial
